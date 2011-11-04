@@ -155,6 +155,7 @@ limited to points which controlled the figure.
 %doc %{_texmfdistdir}/doc/generic/pst-eucl/doc/euclide_english.ist
 %doc %{_texmfdistdir}/doc/generic/pst-eucl/doc/euclide_macros.ist
 %doc %{_texmfdistdir}/doc/generic/pst-eucl/pst-eucl-doc.pdf
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -165,3 +166,5 @@ limited to points which controlled the figure.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar dvips tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
