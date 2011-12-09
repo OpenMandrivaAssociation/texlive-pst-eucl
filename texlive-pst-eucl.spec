@@ -1,11 +1,11 @@
-# revision 24069
+# revision 24734
 # category Package
 # catalog-ctan /graphics/pstricks/contrib/pst-eucl
-# catalog-date 2011-09-22 12:53:18 +0200
+# catalog-date 2011-11-17 08:52:38 +0100
 # catalog-license lppl
-# catalog-version 1.39
+# catalog-version 1.40
 Name:		texlive-pst-eucl
-Version:	1.39
+Version:	1.40
 Release:	1
 Summary:	Euclidian geometry with pstricks
 Group:		Publishing
@@ -17,8 +17,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The pst-eucl package allow the drawing of Euclidean geometric
@@ -28,19 +26,19 @@ transformations or intersections. The use of coordinates is
 limited to points which controlled the figure.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
