@@ -1,12 +1,12 @@
-# revision 24926
+# revision 27798
 # category Package
 # catalog-ctan /graphics/pstricks/contrib/pst-eucl
-# catalog-date 2011-12-23 12:25:21 +0100
+# catalog-date 2012-09-18 15:51:09 +0200
 # catalog-license lppl
-# catalog-version 1.42
+# catalog-version 1.43
 Name:		texlive-pst-eucl
-Version:	1.42
-Release:	2
+Version:	1.43
+Release:	1
 Summary:	Euclidian geometry with pstricks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-eucl
