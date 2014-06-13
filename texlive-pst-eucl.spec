@@ -6,7 +6,7 @@
 # catalog-version 1.48
 Name:		texlive-pst-eucl
 Version:	1.48
-Release:	5
+Release:	6
 Summary:	Euclidian geometry with pstricks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-eucl
