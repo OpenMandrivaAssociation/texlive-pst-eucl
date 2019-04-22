@@ -1,6 +1,6 @@
 Name:		texlive-pst-eucl
-Version:	1.56
-Release:	2
+Version:	1.64
+Release:	1
 Summary:	Euclidian geometry with pstricks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-eucl
