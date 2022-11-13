@@ -1,12 +1,12 @@
 Name:		texlive-pst-eucl
-Version:	1.64
+Version:	56474
 Release:	1
 Summary:	Euclidian geometry with pstricks
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-eucl
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-eucl.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-eucl.doc.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-eucl.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-eucl.doc.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -20,12 +20,12 @@ transformations or intersections. The use of coordinates is
 limited to points which controlled the figure.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -36,7 +36,7 @@ limited to points which controlled the figure.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1
+%autosetup -p1 -c -a1
 
 %build
 
