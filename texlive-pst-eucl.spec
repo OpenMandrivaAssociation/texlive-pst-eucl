@@ -3,7 +3,7 @@ Version:	66924
 Release:	1
 Summary:	Euclidian geometry with pstricks
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-eucl
+URL:		https://www.ctan.org/tex-archive/graphics/pstricks/contrib/pst-eucl
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-eucl.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/pst-eucl.doc.r%{version}.tar.xz
