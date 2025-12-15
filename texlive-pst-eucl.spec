@@ -1,5 +1,5 @@
 Name:		texlive-pst-eucl
-Version:	66924
+Version:	76924
 Release:	1
 Summary:	Euclidian geometry with pstricks
 Group:		Publishing
